@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+    <div class="container-from">
+        <div class="box form-box">
+            <header>
+                <label class="one">Open Digital Library</label>
+                <label class="tow">Accessabil Knowledge for Everyone</label>
+                <label>
+                    Login
+                </label>
+            </header>
+
+            <form action="" method="post">
+                {%csrf_token%}
+                <div class="field input">
+                    <input type="text" name="username">
+                </div>
+                <div class="field input">
+                    <input type="text" name="password">
+                </div>
+
+                <div class="field ">
+                    <input type="submit" class="btn">
+                </div>
+                <div class="links">
+                    Don't have account?<a href="/register">Sign Up Now</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

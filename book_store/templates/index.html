@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+    <nav>
+        <ul>
+
+
+            <li><a href="/login">Login</a></li>
+        </ul>
+        <div class="logos">
+            <label class="logo">Open Digital Library</label>
+            <label class="logo-one">Accessabil Knowledge for Everyone</label>
+            <form action="">
+                <div class="search">
+                    <button type="submit"><img src="{%static 'asstes/search.png'%}" alt=""></button>
+                    <input type="text" placeholder="Search for title,author,publisher">
+                </div>
+
+
+
+
+            </form>
+        </div>
+
+    </nav>
+    <main>
+        <div class="latest_addition">
+            <span>Latest Addition</span>
+
+            {%for latest in latest%}
+            <div class="container_latest">
+                <div class="box">
+                    <a href=""><img src="" alt=""></a>
+                </div>
+
+            </div>
+            {%endfor%}
+        </div>
+        <div class="Catagory">
+            <span>Catagory</span>
+            {%for latest in latest%}
+            <div class="container_catagory">
+                <div class="heading">
+                    <a href=""><img src="" alt=""></a>
+                </div>
+
+            </div>
+            {%endfor%}
+        </div>
+    </main>
+</body>
+
+</html>

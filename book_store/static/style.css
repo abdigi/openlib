@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+nav {
+    background: #0082e6;
+
+
+
+}
+
+nav,
+label {
+    text-align: center;
+    display: block;
+}
+
+label.logo {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 5%;
+
+
+
+
+}
+
+label.logo-one {
+    color: white;
+
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-top: 12px;
+    padding-top: 0px;
+
+    padding-left: 30px;
+
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    border-radius: 3px;
+
+}
+
+a:hover {
+    background: #94c2e3a7;
+
+}
+
+
+.search {
+
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 3px;
+
+    display: inline;
+    margin-top: 60px;
+
+}
+
+.logo-one {
+    margin-bottom: 2%;
+}
+
+.search input,
+button {
+    outline: none;
+    border: none;
+    background-color: white;
+    width: fit-content;
+    margin-bottom: 4%;
+
+}
+
+
+
+
+.search input {
+    width: 60%;
+}
+
+.container_latest {
+    width: 90%;
+    padding: 20px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.box {
+    width: 250px;
+    margin: 0 10px;
+
+}
+
+.box a img {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+
+}
+
+.container-from {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+.box {
+
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+
+}
+
+.form-box {
+
+    width: 450px;
+    margin: 0px 10px;
+}
+
+.form-box header {
+    color: #0082e6;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid#e6e6e6;
+    margin-bottom: 10px;
+}
+
+.form-box form .field {
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+
+.one {
+    font-size: 40px;
+
+}
+
+input {
+    height: 30px;
+}
+
+.form-box form .btn {
+
+    color: white;
+    background: #0082e6;
+    border: 0;
+    border-radius: 3px;
+}
